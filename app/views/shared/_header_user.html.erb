@@ -1,0 +1,22 @@
+<header>
+
+    <nav class="bg-gray-800">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <%= link_to root_path do %>
+                            <%= image_tag 'logo.png', class: 'h-12 w-12 object-contain' %>
+                        <% end %>
+                    </div>        
+                </div>
+                <div class="ml-4 flex items-center md:ml-6">
+                    <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                        <%= render partial: 'shared/items' %>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</header>

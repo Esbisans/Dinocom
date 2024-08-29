@@ -1,0 +1,6 @@
+es:
+  app_name: 'Dinocom Tienda online'
+  meta_title: 'Dinocom Tienda online - El mejor lugar para tus compras'
+  header_admin:
+    dashboard: 'Tablero'
+    categories: 'Categorías'
