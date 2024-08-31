@@ -1,43 +1,65 @@
-<h1>Admin Home</h1>
+<%# <h1>Admin Home</h1> %>
 
 <div class="flex justify-between flex-wrap mt-8 w-full items-center max-w-4xl">
   <h2 class="text-2xl text-gray-800 font-medium mb-4">Daily Stats</h2>
   <div class="flex gap-10 flex-col md:flex-row justify-between w-full">
-    <div class="max-w-sm rounded overflow-hidden shadow-xl bg-gradient-to-r from-gray-400 to-gray-300">
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2 text-white">Revenue</div>
-        <p class="text-white text-base">
+    
+    <div class="p-4 transition-shadow border rounded-lg shadow-sm hover:shadow-lg">
+      <div class="flex items-start">
+        <div class="flex flex-col flex-shrink-0 space-y-2">
+          <span class="text-gray-400 font-bold">Revenue</span>
+          <span class="text-lg font-semibold">
           <%= @quick_stats[:revenue] ? number_to_currency(@quick_stats[:revenue]) : '$0.00' %>
-        </p>
+          </span>
+        </div>
+        <div class="flex items-center justify-end ml-auto h-16">
+          <%= icon 'fa-solid', 'money-bill-trend-up', class: 'ml-4 text-gray-400 text-3xl' %>
+        </div>
       </div>
     </div>
 
-    <div class="max-w-sm rounded overflow-hidden shadow-xl bg-gradient-to-r from-gray-400 to-gray-300">
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2 text-white">Total Sales</div>
-        <p class="text-white text-base">
+    <div class="p-4 transition-shadow border rounded-lg shadow-sm hover:shadow-lg">
+      <div class="flex items-start">
+        <div class="flex flex-col flex-shrink-0 space-y-2">
+          <span class="text-gray-400 font-bold">Total Sales</span>
+          <span class="text-lg font-semibold">
           <%= @quick_stats[:sales] ? number_to_currency(@quick_stats[:sales]) : '$0.00' %>
-        </p>
+          </span>
+        </div>
+        <div class="flex items-center justify-end ml-auto h-16">
+          <%= icon 'fa-solid', 'money-bills', class: 'ml-4 text-gray-400 text-3xl' %>
+        </div>
       </div>
     </div>
 
-    <div class="max-w-sm rounded overflow-hidden shadow-xl bg-gradient-to-r from-gray-400 to-gray-300">
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2 text-white">Average Sale</div>
-        <p class="text-white text-base">
+    <div class="p-4 transition-shadow border rounded-lg shadow-sm hover:shadow-lg">
+      <div class="flex items-start">
+        <div class="flex flex-col flex-shrink-0 space-y-2">
+          <span class="text-gray-400 font-bold">Average Sale</span>
+          <span class="text-lg font-semibold">
           <%= @quick_stats[:avg_sale] ? number_to_currency(@quick_stats[:avg_sale]) : '$0.00' %>
-        </p>
+          </span>
+        </div>
+        <div class="flex items-center justify-end ml-auto h-16">
+          <%= icon 'fa-solid', 'gauge', class: 'ml-4 text-gray-400 text-3xl' %>
+        </div>
       </div>
     </div>
 
-    <div class="max-w-sm rounded overflow-hidden shadow-xl bg-gradient-to-r from-gray-400 to-gray-300">
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2 text-white">Items/Sale</div>
-        <p class="text-white text-base">
+    <div class="p-4 transition-shadow border rounded-lg shadow-sm hover:shadow-lg">
+      <div class="flex items-start">
+        <div class="flex flex-col flex-shrink-0 space-y-2">
+          <span class="text-gray-400 font-bold">Items/Sale</span>
+          <span class="text-lg font-semibold">
           <%= @quick_stats[:per_sale].to_i %>
-        </p>
+          </span>
+        </div>
+        <div class="flex items-center justify-end ml-auto h-16">
+          <%= icon 'fa-solid', 'hand-holding-dollar', class: 'ml-4 text-gray-400 text-3xl' %>
+        </div>
       </div>
     </div>
+  
   </div>
 
 
