@@ -1,24 +1,29 @@
-# README
+# Dinocom Ecommerce
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is a Ruby on Rails ecommerce application. The application features two distinct sections: an admin panel and a user section.
 
-Things you may want to cover:
+## Technologies Used
 
-* Ruby version
+- **Ruby on Rails**: Web application framework used to build the application.
+- **PostgreSQL**: Database management system used for storing and managing data.
+- **AWS S3**: Amazon Web Services' Simple Storage Service used for managing and storing images.
+- **Devise**: Authentication solution for managing admin user sessions and registrations.
+- **Mercado Pago**: Payment gateway integration for simulating transactions.
 
-* System dependencies
+## Admin Panel
 
-* Configuration
+Administrators can manage users with full authentication, admins have the ability to create, read, update, and delete categories, products, and orders the panel have a comprehensive dashboard provides an overview of key metrics and operations.
 
-* Database creation
+![admin](assets/admin_demo.gif)
 
-* Database initialization
+## User Section
 
-* How to run the test suite
+The user section is designed for simulating shopping, users can view available products and explore categories, the application integrates with Mercado Pago for payment processing, allowing users to simulate purchases
 
-* Services (job queues, cache servers, search engines, etc.)
+![user](assets/user_demo.gif)
 
-* Deployment instructions
+## Project's Link
 
-* ...
+[dinocom.onrender.com](https://dinocom-k18j.onrender.com/)
+
+(It may sometimes be slow due to Render's free tier.)
